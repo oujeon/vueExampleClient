@@ -2,9 +2,12 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/variable">변수</router-link> |
+      <router-link to="/method">Method</router-link> |
+      <router-link to="/dataBinding">Data Binding</router-link> |
+      <router-link to="/eventView">Event</router-link> |
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
