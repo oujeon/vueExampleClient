@@ -13,7 +13,7 @@
 
 export default {
   // 1. name
-  name: "DataBindingView",
+  name: "OneWayDataBindingView",
   // 2. data
   data() {
     return {

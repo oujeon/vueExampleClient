@@ -3,8 +3,14 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import VariableView from "../views/VariableView.vue";
 import MethodView from "../views/MethodView.vue";
-import DataBindingView from "../views/DataBindingView.vue";
+import OneWayDataBindingView from "../views/OneWayDataBindingView.vue";
 import EventView from "../views/EventView.vue";
+import TwoWayDataBindingView from "../views/TwoWayDataBindingView.vue";
+import ComputedView from "../views/ComputedView.vue";
+import WatchView from "../views/WatchView.vue";
+import ClassStyleView from "../views/ClassStyleView.vue";
+import vIfShowView from "../views/vIfShowView.vue";
+import vForView from "../views/vForView.vue";
 
 Vue.use(VueRouter);
 
@@ -25,24 +31,45 @@ const routes = [
     component: MethodView,
   },
   {
-    path: "/dataBinding",
-    name: "dataBinding",
-    component: DataBindingView,
+    path: "/oneWayDataBinding",
+    name: "oneWayDataBinding",
+    component: OneWayDataBindingView,
   },
   {
     path: "/eventView",
     name: "eventView",
     component: EventView,
   },
-
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  // }
+  {
+    path: "/twoWayDataBinding",
+    name: "twoWayDataBinding",
+    component: TwoWayDataBindingView,
+  },
+  {
+    path: "/computed",
+    name: "computed",
+    component: ComputedView,
+  },
+  {
+    path: "/watch",
+    name: "watch",
+    component: WatchView,
+  },
+  {
+    path: "/classStyle",
+    name: "classStyle",
+    component: ClassStyleView,
+  },
+  {
+    path: "/vIfShow",
+    name: "vIfShow",
+    component: vIfShowView,
+  },
+  {
+    path: "/vFor",
+    name: "vFor",
+    component: vForView,
+  },
 ];
 
 const router = new VueRouter({
