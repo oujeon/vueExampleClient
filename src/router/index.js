@@ -11,6 +11,10 @@ import WatchView from "../views/WatchView.vue";
 import ClassStyleView from "../views/ClassStyleView.vue";
 import vIfShowView from "../views/vIfShowView.vue";
 import vForView from "../views/vForView.vue";
+import ViewComponentView from "../views/ViewComponentView.vue";
+import PropsParentView from "../views/PropsParentView.vue";
+import EmitParentView from "../views/EmitParentView.vue";
+import SlotView from "../views/SlotView.vue";
 
 Vue.use(VueRouter);
 
@@ -69,6 +73,26 @@ const routes = [
     path: "/vFor",
     name: "vFor",
     component: vForView,
+  },
+  {
+    path: "/viewComponent",
+    name: "viewComponent",
+    component: ViewComponentView,
+  },
+  {
+    path: "/propsParent",
+    name: "propsParent",
+    component: PropsParentView,
+  },
+  {
+    path: "/emitParent",
+    name: "emitParent",
+    component: EmitParentView,
+  },
+  {
+    path: "/slot",
+    name: "slot",
+    component: SlotView,
   },
 ];
 

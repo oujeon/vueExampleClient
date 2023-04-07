@@ -12,6 +12,10 @@
       <router-link to="/classStyle">Class Style</router-link> |
       <router-link to="/vIfShow">v-if show</router-link> |
       <router-link to="/vFor">v-for</router-link> |
+      <router-link to="/viewComponent">View Component</router-link> |
+      <router-link to="/propsParent">Props Parent</router-link> |
+      <router-link to="/emitParent">Emit Parent</router-link> |
+      <router-link to="/slot">Slot</router-link> |
     </nav>
     <router-view />
   </div>
