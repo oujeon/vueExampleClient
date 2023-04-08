@@ -14,7 +14,9 @@ import vForView from "../views/vForView.vue";
 import ViewComponentView from "../views/ViewComponentView.vue";
 import PropsParentView from "../views/PropsParentView.vue";
 import EmitParentView from "../views/EmitParentView.vue";
-import SlotView from "../views/SlotView.vue";
+import SlotParentView from "../views/SlotParentView.vue";
+import ToDoView from "../views/ToDoView.vue";
+import VuexView from "../views/VuexView.vue";
 
 Vue.use(VueRouter);
 
@@ -90,9 +92,19 @@ const routes = [
     component: EmitParentView,
   },
   {
-    path: "/slot",
-    name: "slot",
-    component: SlotView,
+    path: "/slotParent",
+    name: "slotParent",
+    component: SlotParentView,
+  },
+  {
+    path: "/toDo",
+    name: "toDo",
+    component: ToDoView,
+  },
+  {
+    path: "/vuex",
+    name: "vuex",
+    component: VuexView,
   },
 ];
 

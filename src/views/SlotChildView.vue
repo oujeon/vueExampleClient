@@ -1,17 +1,28 @@
 <template>
-  <div>SlotView</div>
+  <div>
+    SlotChildView1
+    <slot></slot>
+    SlotChildView2
+    <slot name="header2"></slot>
+    SlotChildView3
+    <slot name="header3"></slot>
+    SlotChildView4
+    <slot name="header4" :proTemp="datTemp"></slot>
+    SlotChildView5
+    <slot name="header5" :proTemp="datTemp"></slot>
+  </div>
 </template>
 <script>
 export default {
   // 1. props
   props: "",
   // 2. name
-  name: "SlotView",
+  name: "SlotChildView",
   // 3. data
   data() {
-    return {};
+    return { datTemp: "Hello World" };
   },
-  // 4. components
+  // 4. components_
   components: {},
   // 5. Lifecycle
   beforeCreate() {},
