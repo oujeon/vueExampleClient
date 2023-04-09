@@ -56,13 +56,20 @@ export default {
       alert(e.target.value);
     },
     metChangeCheckBox(e) {
-      this.$store.commit("MUT_TOGGLE_TODO", {
+      // this.$store.commit("MUT_TOGGLE_TODO", {
+      //   id: this.proToDo.id,
+      //   checked: e.target.checked,
+      // });  // mutations을 직접 사용시
+
+      this.$store.dispatch("ACT_TOGGLE_TODO", {
         id: this.proToDo.id,
         checked: e.target.checked,
       });
     },
     metClickDelete() {
-      this.$store.commit("MUT_DELETE_TODO", this.proToDo.id);
+      // this.$store.commit("MUT_DELETE_TODO", this.proToDo.id); // mutations을 직접 사용시
+
+      this.$store.dispatch("ACT_DELETE_TODO", this.proToDo.id);
     },
   },
 };
