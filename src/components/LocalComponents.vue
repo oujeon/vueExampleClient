@@ -3,7 +3,6 @@
 </template>
 <script>
 //
-
 export default {
   // 1. name
   name: "LocalComponents",
